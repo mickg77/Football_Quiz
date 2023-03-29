@@ -18,5 +18,6 @@ for question in question_data:  # for all the questions in the question data dic
 
 quiz = QuizBrain(question_bank)  # quiz is created by passing the entire question bank into it
 while quiz.still_has_questions():
+    print(f"You scored  {quiz.show_score()} out of {quiz.show_question()}")
     quiz.next_question()
 
